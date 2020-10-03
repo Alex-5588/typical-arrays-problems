@@ -7,7 +7,7 @@ exports.min = function min (array) {
     return 0;
     }
   }
-  return min;
+  return Math.min.apply(null, array);
 };
 
 exports.max = function max (array) {
@@ -19,7 +19,7 @@ exports.max = function max (array) {
     return 0;
     }
   }
-  return max;
+  return Math.max.apply(null, array);
 };
 
 exports.avg = function avg (array) {
@@ -29,8 +29,9 @@ exports.avg = function avg (array) {
     sumArrs += array[i];
   }
   let mean = sumArrs / array.lengh;
+      return mean;                             
   } else {
     return 0;
   }
-}
+};
 
