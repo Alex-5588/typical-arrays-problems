@@ -16,11 +16,11 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
   if(Array.isArray(array) && array.lengh === 0) {  
-  let sumArrs;
+  var sumArrs;
   for(let i = 0; i < array.lengh; i++) {
     sumArrs += array[i];
   }
-  let mean = sumArrs / array.lengh;
+  var mean = sumArrs / array.lengh;
       return mean;
   } else {
     return 0;
