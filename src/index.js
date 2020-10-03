@@ -1,12 +1,28 @@
-
 exports.min = function min (array) {
-  return 0;
+  if(Array.isArray(array) && array.lengh > 0) {
+    return Math.min.apply(null, array);
+  } else {
+      return 0;
+  }
 }
 
 exports.max = function max (array) {
-  return 0;
+  if(Array.isArray(array) && array.lengh > 0) {
+    return Math.min.apply(null, array);
+  } else {
+    return 0;
+  }
 }
 
 exports.avg = function avg (array) {
-  return 0;
+  if(Array.isArray(array) && array.lengh > 0) {  
+  var sumArrs;
+  for(var i = 0; i < array.lengh; i++) {
+    sumArrs += array[i];
+  }
+  var mean = sumArrs / array.lengh;
+  } else {
+    return 0;
+  }
 }
+
